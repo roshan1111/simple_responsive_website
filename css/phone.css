@@ -1,0 +1,51 @@
+/* nav start */
+#navbar{
+    flex-direction: column;
+}
+
+#navbar #navigation .items{
+    margin: 0px;
+    
+}
+
+/* nav ends */
+
+/* home start */
+#homepara p {
+    font-size: 15px;
+    
+}
+#homepara {
+    
+    height: 549px;
+}
+
+#homepara::before {
+   
+    height: 67%;
+    
+}
+/* home ends */
+
+/* service start */
+.services {
+ 
+    flex-direction: column;
+}
+
+.box {
+   
+    height: 352px;
+}
+/* service ends */
+
+.items {
+    padding: 16px 1px;
+}
+
+
+.heading {
+    font-size: 2.2rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}

@@ -1,0 +1,273 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --nav-height:55px;
+}
+
+/* nav */
+/* logo */
+.logo{
+    margin: 4px 44px 0 11px;
+}
+#mylogo{
+    height: 85px;
+    width: 75px;
+    border-radius: 50px;
+}
+
+#navbar::before{
+    content: "";  
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6 ;
+    top:0;
+    left: 0;
+
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    font-family: 'Baloo Bhai 2', cursive;
+
+    
+}
+
+#navbar #navigation{
+    display: flex;
+    
+}
+
+#navbar #navigation .items{
+    margin: 29px;
+    color: white;
+   list-style: none;
+   text-decoration: none;
+   font-size: 1.3rem;
+}
+
+#navbar #navigation a{
+    display: block;
+    border-radius: 14px;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+
+#navbar #navigation a:hover{
+  background-color: white;
+    color: black;
+}
+
+/* nav ends */
+
+/* image and text section starts*/
+#homepara{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: center;
+    height:418px; 
+
+}
+#homepara::before{
+    content: "";
+    background: url("../img/bg.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+
+  
+}
+
+
+#homepara h1{
+    color: white;
+   
+    text-align: center;
+}
+
+#homepara p{
+    color: white;
+    text-align: center;
+    
+}
+/* mage and text section ends*/
+
+
+
+/* box section start */
+
+/* box image size */
+.boximg{
+    height: 77px;
+    width: 77px;
+    display: block;
+    margin: auto;
+}
+
+/* service box  */
+.services{
+    display: flex;
+    margin: 0 44px 44px 44px;
+}
+/* box  */
+.box{
+    border: 2px solid brown;
+    margin: 4px 22px;
+    background-color: rgba(230, 201, 201, 0.51);
+    padding: 22px;
+    border-radius: 22px;
+    height: 266px;
+
+    
+}
+
+#secbox .services .box p{
+    font-family: 'Bree Serif', serif;
+    font-size: 0.9rem;
+
+}
+/* box section ends */
+
+/* client section starts */
+#clientitems::before{
+    content: "";
+    background: url("../img/bg.jpg") no-repeat center center/cover;
+    height: 12%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+    background-attachment: fixed;
+
+}
+
+#clientitems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.items{
+    padding: 16px 36px;
+}
+
+.cliimg{
+    height: 77px;
+    width: 77px;
+}
+/* client section ends */
+
+/* contact section start */
+
+#contact::before{
+    content: "";
+    background: url("../img/c.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background-attachment: fixed;
+
+}
+#contactform input, #contactform textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: o.1rem;
+    border-radius: 9px;
+}
+
+#contactform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+
+#contactform form{
+    width: 40%;
+}
+
+#contactform label{
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+.formgroup{
+     margin: 12px;
+}
+
+.subm{
+    width: 100%;
+}
+
+
+/* contact section ends */
+
+/* footer section starts */
+footer{
+    background-color: black;
+    color: white;
+    padding: 13px;
+}
+
+/* footer section ends */
+
+/* paragraph utility */
+.para{
+    font-size: 1 rem;
+    font-family: 'Bree Serif', serif;
+
+}
+/* heading utility */
+.heading{
+  
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+
+}
+.secondheading{
+    font-size: 1.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+/* button utility */
+.btn{
+    padding: 5px 20px;
+    margin: 13px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(165, 42, 42, 0.393);
+
+}
+.center{
+    text-align: center;
+}
